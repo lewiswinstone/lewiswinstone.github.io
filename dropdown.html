@@ -34,6 +34,66 @@
 	<h2>Dropdown Buttons</h2>
 	<p>A dropdown button often used within navigation bars allows users to choose one value from a predefined list.</p>
 	
+	<h3>Example</h3>
+	
+	<div class="dropdownbutton">
+	<button class="dropbutton">Dropdown</button>
+	<div class="content">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+</div>
+
+	<div id="html" style="background-color: #b3cccc;">
+	<h3>HTML</h3>
+		<xmp>
+		<div class="dropdownbutton">
+		<button class="dropbutton">Dropdown</button>
+		<div class="content">
+			<a href="#">Link 1</a>
+			<a href="#">Link 2</a>
+			<a href="#">Link 3</a>
+		</div>
+</div>
+		</xmp>
+	</div>
+	<div id="css" style="background-color: #b3cccc;">
+	<h3>CSS</h3>
+		<xmp>
+		.dropdownbutton {
+			position: relative;
+			display: inline-block;
+		}
+
+		.dropbutton {
+			background-color: #33cccc;
+			color: white;
+			padding: 16px;
+			font-size: 16px;
+			border: none;
+		}
+
+
+		.content {
+			display: none;
+			position: absolute;
+			background-color: #f1f1f1;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			z-index: 1;
+		}
+
+		.content a {
+			color: black;
+			padding: 12px 16px;
+			display: block;
+		}
+
+		.dropdownbutton:hover .content {
+			display: block;
+		}
+		</xmp>
 	
 	
 	</div>
