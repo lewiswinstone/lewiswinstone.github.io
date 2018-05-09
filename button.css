@@ -10,3 +10,35 @@
 	background-color: white;
 
 }
+.dropdownbutton {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbutton {
+    background-color: #33cccc;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+
+.content {
+	display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.content a {
+    color: black;
+    padding: 12px 16px;
+    display: block;
+}
+
+.dropdownbutton:hover .content {
+    display: block;
+}
