@@ -1,15 +1,16 @@
 .button {
 	background-color: #33cccc;
-	border: 1px solid black;
 	color: black;
 	text-align:center;
 	height: 40px;
 	width: 100px;
+	border-radius: 2px;
 }
 .button:hover {
 	background-color: white;
 
 }
+
 .dropdownbutton {
     position: relative;
     display: inline-block;
@@ -42,15 +43,25 @@
 .dropdownbutton:hover .content {
     display: block;
 }
+
 .btn-block {
 	width: 100%;
 	background-color: #33cccc;
-	border: 1px solid black;
 	color: black;
 	text-align:center;
 	height: 40px;
+	border-radius: 2px;
 }
 
 .btn-block:hover {
 	background-color: white;
+}
+.disabledbutton {
+	opacity: 0.6;
+	background-color: #33cccc;
+	color: black;
+	text-align:center;
+	height: 40px;
+	width: 100px;
+	border-radius: 2px;
 }
