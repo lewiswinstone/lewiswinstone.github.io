@@ -65,3 +65,14 @@
 	width: 100px;
 	border-radius: 2px;
 }
+.iconbutton {
+	background-color: #33cccc;
+	color: black;
+	text-align:center;
+	height: 80px;
+	width: 100px;
+	border-radius: 2px;
+}
+.iconbutton:hover{
+	background-color: white;
+}
