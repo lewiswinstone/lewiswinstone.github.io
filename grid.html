@@ -32,9 +32,61 @@
 </div>
 	<div id="main">
 	<h2>Grid Layouts</h2>
-	<p>Grid layouts provide a method creating grid strcutures helping to create and maintain a layout throughout a website.</p>
+	<p>Grid layouts provide a method creating grid structures helping to create and maintain a layout throughout a website.</p>
 	
+	<h3>Example</h3>
 	
+	<div class="grid">
+		<div class="item1">Header</div>
+		<div class="item2">Menu</div>
+		<div class="item3">Main</div>  
+		<div class="item4">Right</div>
+		<div class="item5">Footer</div>
+	</div>
+	
+	<div id="html" style="background-color: #b3cccc;">
+	<h3>HTML</h3>
+		<xmp>
+			<div class="grid">
+				<div class="item1">Header</div>
+				<div class="item2">Menu</div>
+				<div class="item3">Main</div>  
+				<div class="item4">Right</div>
+				<div class="item5">Footer</div>
+			</div>
+		</xmp>
+	</div>
+	
+	<div id="css" style="background-color: #b3cccc;">
+	<h3>CSS</h3>
+		<xmp>
+		.item1 { grid-area: header; }
+		.item2 { grid-area: menu; }
+		.item3 { grid-area: main; }
+		.item4 { grid-area: right; }
+		.item5 { grid-area: footer; }
+
+		.grid {
+		display: grid;
+		grid-template-areas:
+			'header header header header header header'
+			'menu main main main right right'
+			'menu footer footer footer footer footer';
+		grid-gap: 5px;
+		background-color: black;
+		padding: 10px;
+		}
+		.grid > div {
+		background-color: #33cccc;
+		text-align: center;
+		padding: 20px 0;
+		font-size: 30px;
+		}
+		.item3 {
+			height: 300px;
+		}
+		</xmp>
+	</div>
 	
 	</div>
 	
