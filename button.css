@@ -87,3 +87,28 @@
 .ghostbutton:hover{
 	background-color: #33cccc;
 }
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+  grid-gap: 5px;
+  background-color: black;
+  padding: 10px;
+}
+.grid > div {
+  background-color: #33cccc;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+.item3 {
+	height: 300px;
+}
