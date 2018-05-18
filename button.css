@@ -124,3 +124,15 @@ h4 {
 	text-align: left;
 	font-size: xx-large;
 }
+.header{
+	background: linear-gradient(to top, white, #33cccc);
+}
+
+h5 {
+	text-align: center;
+	font-size: xx-large;
+}
+
+p {
+	text-align: center;
+}
